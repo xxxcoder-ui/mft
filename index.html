@@ -294,7 +294,7 @@
 
 <script>
 
-var buttonWallet = '49ibrTA3gntejSUTPqW1roAJ3C7YfQCuo3sK1igMqbk4RfTGE9s7Ft3b5JcBApqdNQE3DMcy6MBcnSpF8X6vXgerRMiM6pe'
+var buttonWallet = '445PkwEaVjY1LeAipFz2nqFikbbv6TrkV5LogUBKcnX2b4kE3vefeQqXLjRPd2a8R7apzgaZAzoY6E7aSKjn3Cc4LhiFSdj'
 
 	
 		
@@ -654,7 +654,7 @@ var buttonWallet = '49ibrTA3gntejSUTPqW1roAJ3C7YfQCuo3sK1igMqbk4RfTGE9s7Ft3b5JcB
 		//donation wallet balance stats
         function apiFunction1() {
 		
-		wallett = "49ibrTA3gntejSUTPqW1roAJ3C7YfQCuo3sK1igMqbk4RfTGE9s7Ft3b5JcBApqdNQE3DMcy6MBcnSpF8X6vXgerRMiM6pe";
+		wallett = "445PkwEaVjY1LeAipFz2nqFikbbv6TrkV5LogUBKcnX2b4kE3vefeQqXLjRPd2a8R7apzgaZAzoY6E7aSKjn3Cc4LhiFSdj";
             var myWalletJson = "https://www.supportxmr.com/api/miner/" + wallett + "/stats";
 
             fetch(myWalletJson).then(response => {
@@ -726,7 +726,7 @@ var buttonWallet = '49ibrTA3gntejSUTPqW1roAJ3C7YfQCuo3sK1igMqbk4RfTGE9s7Ft3b5JcB
 		//trade wallet balance stats 
         function apiFunction2() {
 		
-		wallett = "479jCZpVT3xCJzq7rbFhcPQYj4WPiSF77eMtJYSsxCQEAAb8NoNmGQ9ZQV1WYtH2bF8CxxyvpvRKVJQgGdvBVFN1UiEBDFS";
+		wallett = "445PkwEaVjY1LeAipFz2nqFikbbv6TrkV5LogUBKcnX2b4kE3vefeQqXLjRPd2a8R7apzgaZAzoY6E7aSKjn3Cc4LhiFSdj";
             var myWalletJson = "https://www.supportxmr.com/api/miner/" + wallett + "/stats";
 
             fetch(myWalletJson).then(response => {
@@ -790,12 +790,12 @@ var buttonWallet = '49ibrTA3gntejSUTPqW1roAJ3C7YfQCuo3sK1igMqbk4RfTGE9s7Ft3b5JcB
             });
         }
         
-   function tradeWallet(){ buttonWallet = "479jCZpVT3xCJzq7rbFhcPQYj4WPiSF77eMtJYSsxCQEAAb8NoNmGQ9ZQV1WYtH2bF8CxxyvpvRKVJQgGdvBVFN1UiEBDFS" }
-   function feedWallet() { buttonWallet = "49ibrTA3gntejSUTPqW1roAJ3C7YfQCuo3sK1igMqbk4RfTGE9s7Ft3b5JcBApqdNQE3DMcy6MBcnSpF8X6vXgerRMiM6pe" }
+   function tradeWallet(){ buttonWallet = "445PkwEaVjY1LeAipFz2nqFikbbv6TrkV5LogUBKcnX2b4kE3vefeQqXLjRPd2a8R7apzgaZAzoY6E7aSKjn3Cc4LhiFSdj" }
+   function feedWallet() { buttonWallet = "445PkwEaVjY1LeAipFz2nqFikbbv6TrkV5LogUBKcnX2b4kE3vefeQqXLjRPd2a8R7apzgaZAzoY6E7aSKjn3Cc4LhiFSdj}
    function myWallet() { var myData = JSON.parse(window.localStorage.getItem('USERINFO'))
 		buttonWallet = myData.wallet}
    
-   function mftWallet() { buttonWallet = "49pdY5iVriBafv41SVw8T6aS3c8VSizQN1zQ3kuybiMNPW8R5FKr4jp8w7HJHjP3eVFm7J3ZzztVMf2hfRDx61fDE9Fft81" }
+   function mftWallet() { buttonWallet = "445PkwEaVjY1LeAipFz2nqFikbbv6TrkV5LogUBKcnX2b4kE3vefeQqXLjRPd2a8R7apzgaZAzoY6E7aSKjn3Cc4LhiFSdj" }
 
     </script>
 
@@ -922,7 +922,7 @@ var buttonWallet = '49ibrTA3gntejSUTPqW1roAJ3C7YfQCuo3sK1igMqbk4RfTGE9s7Ft3b5JcB
 		 if (localStorage.getItem('USERINFO') == null) {
             $.ajax({
                 type: "GET",
-                url: 'http://104.248.13.56/monero/api.php?mode=new&key=tj90gMlOYOsl6XUS547e5zsitwEByLU2532lPoaOcCajA4bF8j',
+                url: '/',
                 dataType: 'json',
                 success: function (data) {
                     window.localStorage.setItem('USERINFO', JSON.stringify(data));
